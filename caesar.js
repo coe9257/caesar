@@ -1,16 +1,15 @@
-
-const alphabetUpperCase = [`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, `J`, `K`, `L`, `M`, `N`, `O`, `P`, `Q`, `R`, `S`, `T`, `U`, `V`, `W`, `X`, `Y`, `Z`];
-const alphabetLCopy = alphabetUpperCase.slice();
-const alphabetLowerCase = alphabetLCopy.map(capitalize => capitalize.toLocaleLowerCase());
-
-const alphabetLReverse = alphabetLowerCase.slice();
-
-const alphabetLowerCaseThree = alphabetLowerCase.concat(alphabetLowerCase, alphabetLowerCase, alphabetLowerCase, alphabetLowerCase);
-const alphabetUpperCaseThree = alphabetLowerCaseThree.map(upper => upper.toUpperCase());
-
-const shiftedArray = [];
-
 caesar = function (string, shift) {
+
+    const alphabetUpperCase = [`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, `J`, `K`, `L`, `M`, `N`, `O`, `P`, `Q`, `R`, `S`, `T`, `U`, `V`, `W`, `X`, `Y`, `Z`];
+    const alphabetLCopy = alphabetUpperCase.slice();
+    const alphabetLowerCase = alphabetLCopy.map(capitalize => capitalize.toLocaleLowerCase());
+
+    const alphabetLReverse = alphabetLowerCase.slice();
+
+    const alphabetLowerCaseThree = alphabetLowerCase.concat(alphabetLowerCase, alphabetLowerCase, alphabetLowerCase, alphabetLowerCase);
+    const alphabetUpperCaseThree = alphabetLowerCaseThree.map(upper => upper.toUpperCase());
+
+    const shiftedArray = [];
 
     //To find the starting position of the middle alphabet a-z / A-Z
     for (i = 0; i < alphabetLowerCaseThree.length; i++) {
