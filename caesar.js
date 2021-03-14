@@ -54,4 +54,4 @@ caesar = function (string, shift) {
     return finalArray;
 }
 
-// module.exports = caesar
+module.exports = caesar
